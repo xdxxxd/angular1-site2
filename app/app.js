@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.pageHeader',
   'myApp.pageFooter',
+  'myApp.pageFeedback',
   'myApp.pageAbout',
   'myApp.view1',
   'myApp.view2',

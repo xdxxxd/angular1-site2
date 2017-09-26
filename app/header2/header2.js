@@ -2,5 +2,5 @@
 
 angular.module('myApp.header2', [])
 .component('header2', {
-    template: '<div>header text</div>'
+    templateUrl: 'header2/header2.html'
 });

@@ -1,1 +1,16 @@
-<div>feedback</div>
+<h1>Send us your feedback</h1>
+<div ng-controller="PageFeedbackCtrl">
+  <h2>{{ greeting }}</h2>
+  <form action="">
+    <label for="">Name</label>
+    <input type="text" ng-model="name">
+    <p>You typed: {{name}} ({{ transformedText() }})</p>
+
+    <p>ng-bind</p>
+    <p ng-bind="name"></p>
+    <div>
+      <button ng-click="name='<' + name + '>'">action</button>
+      <button ng-click="hello()">Say hello in console</button>
+    </div>
+  </form>
+</div>

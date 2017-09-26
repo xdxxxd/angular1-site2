@@ -9,6 +9,15 @@ angular.module('myApp.pageFeedback', ['ngRoute'])
         });
     }])
 
-    .controller('PageFeedbackCtrl', [function() {
+    .controller('PageFeedbackCtrl', ['$scope', '$http', function($scope) {
+
+        $scope.hello = function hello() {
+            console.log('hello ' + $scope.name);
+        };
+        $scope.name = 'John Connor';
+        $scope.greeting = 'hi guest';
+        $scope.transformedText = function transformedText() {
+            return 'it was really ' + $scope.name;
+        }
 
     }]);
